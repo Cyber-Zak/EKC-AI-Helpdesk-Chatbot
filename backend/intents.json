@@ -1,0 +1,535 @@
+{
+  "intents": [
+
+    {
+      "intent": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good evening",
+        "good afternoon",
+        "is anyone there",
+        "can you help me",
+        "i need help",
+        "hello chatbot",
+        "hi ekc bot",
+        "hello there",
+        "hi there",
+        "hey ekc",
+        "hey college bot",
+        "can you assist me",
+        "i have a question",
+        "need some information"
+      ]
+    },
+
+    {
+      "intent": "about_ekc",
+      "patterns": [
+        "about ekc",
+        "about eranad knowledge city",
+        "tell me about ekc technical campus",
+        "what is ekc",
+        "college overview",
+        "about your college",
+        "where is ekc located",
+        "who manages ekc",
+        "what kind of college is ekc",
+        "is ekc affiliated to ktu",
+        "tell me about your institution",
+        "ekc college details",
+        "what is special about ekc",
+        "ekc technical campus details",
+        "ekc background",
+        "who runs ekc college",
+        "is ekc private or government",
+        "ekc trust details"
+      ]
+    },
+
+    {
+      "intent": "ktu_about",
+      "patterns": [
+        "what is ktu",
+        "about ktu",
+        "apj abdul kalam technological university",
+        "ktu university details",
+        "ktu overview",
+        "ktu affiliation",
+        "ktu full form",
+        "ktu headquarters",
+        "is ktu a government university",
+        "ktu university information",
+        "about apj abdul kalam university",
+        "ktu established year",
+        "who is the chancellor of ktu",
+        "ktu governing body",
+        "ktu approval status",
+        "ktu under government or private"
+      ]
+    },
+
+    {
+      "intent": "courses_offered",
+      "patterns": [
+        "courses offered",
+        "btech courses",
+        "engineering branches",
+        "departments in ekc",
+        "what courses are available",
+        "branches in ekc",
+        "what can i study in ekc",
+        "ekc engineering branches",
+        "btech programs in ekc",
+        "available departments",
+        "list of courses in ekc",
+        "engineering courses in ekc",
+        "what branches are there",
+        "cse available in ekc",
+        "mechanical engineering in ekc",
+        "ai courses in ekc",
+        "new branches in ekc"
+      ]
+    },
+
+    {
+      "intent": "seat_structure",
+      "patterns": [
+        "seat structure",
+        "approved seats",
+        "how many seats are available",
+        "government and management seats",
+        "nri seats",
+        "quota wise seats",
+        "seat matrix",
+        "intake capacity",
+        "branch wise seats",
+        "how many seats per branch",
+        "branch intake details",
+        "seat availability",
+        "how many students per class",
+        "government quota seats count",
+        "management quota seats count"
+      ]
+    },
+
+    {
+      "intent": "eligibility",
+      "patterns": [
+        "eligibility criteria",
+        "who can apply",
+        "btech eligibility",
+        "admission eligibility",
+        "minimum marks required",
+        "eligibility for ekc",
+        "eligibility for ktu",
+        "pcm marks required",
+        "can i apply with 45 percent",
+        "minimum qualification",
+        "eligibility for btech admission",
+        "minimum marks for admission",
+        "can i apply after diploma",
+        "maths compulsory for btech",
+        "physics chemistry marks required",
+        "lateral entry eligibility"
+      ]
+    },
+
+    {
+      "intent": "admission_process",
+      "patterns": [
+        "admission process",
+        "how to get admission",
+        "how to apply",
+        "btech admission ekc",
+        "admission procedure",
+        "keam admission",
+        "management quota admission",
+        "nri quota admission",
+        "direct admission",
+        "steps for admission",
+        "how to join ekc",
+        "steps to get admission in ekc",
+        "documents required for admission",
+        "admission through keam",
+        "direct admission procedure",
+        "management seat admission steps"
+      ]
+    },
+
+    {
+      "intent": "fees",
+      "patterns": [
+        "fee structure",
+        "btech fees",
+        "tuition fees",
+        "how much is the fee",
+        "college fees",
+        "ktu fees",
+        "government quota fee",
+        "management quota fee",
+        "nri quota fee",
+        "hostel fee",
+        "total fee for btech",
+        "annual fee structure",
+        "semester fee details",
+        "college fee payment",
+        "is fee refundable",
+        "hostel and mess fees"
+      ]
+    },
+
+    {
+      "intent": "scholarships",
+      "patterns": [
+        "scholarships",
+        "financial aid",
+        "fee waiver",
+        "education loan",
+        "scholarship schemes",
+        "government scholarship",
+        "merit scholarship",
+        "minority scholarship",
+        "e grants",
+        "aicte fee waiver",
+        "fee concession schemes",
+        "financial assistance for students",
+        "minority fee support",
+        "merit based scholarship",
+        "government fee reimbursement",
+        "how to apply for scholarship"
+      ]
+    },
+
+    {
+      "intent": "attendance_rules",
+      "patterns": [
+        "attendance rule",
+        "minimum attendance",
+        "attendance percentage",
+        "ktu attendance",
+        "attendance shortage",
+        "what if attendance is less",
+        "attendance criteria",
+        "attendance requirement",
+        "can i write exam with low attendance",
+        "attendance rules of ktu",
+        "minimum attendance for exam",
+        "attendance shortage penalty",
+        "medical leave attendance",
+        "attendance relaxation rules"
+      ]
+    },
+
+    {
+      "intent": "ktu_academics",
+      "patterns": [
+        "ktu rules",
+        "ktu exam rules",
+        "passing marks",
+        "year back system",
+        "activity points",
+        "ktu regulations",
+        "ktu academic rules",
+        "grading system",
+        "credit system",
+        "promotion rules",
+        "ktu academic regulations",
+        "grading policy",
+        "sgpa cgpa calculation",
+        "ktu credit requirement",
+        "promotion criteria",
+        "year back conditions"
+      ]
+    },
+
+    {
+      "intent": "activity_points",
+      "patterns": [
+        "what are activity points",
+        "how to get activity points",
+        "ktu activity points",
+        "nss activity points",
+        "sports activity points",
+        "minimum activity points",
+        "activity points requirement",
+        "how many activity points needed",
+        "activity points needed for degree",
+        "clubs activity points",
+        "seminar activity points",
+        "hackathon activity points"
+      ]
+    },
+
+    {
+      "intent": "exams",
+      "patterns": [
+        "ktu exams",
+        "semester exam",
+        "internal exam",
+        "external exam",
+        "exam pattern",
+        "how exams are conducted",
+        "ktu semester exams",
+        "exam schedule",
+        "exam rules",
+        "exam conduction method",
+        "ktu exam schedule",
+        "how many internals",
+        "exam hall rules"
+      ]
+    },
+
+    {
+      "intent": "results",
+      "patterns": [
+        "ktu results",
+        "how to check results",
+        "exam results",
+        "result website",
+        "ktu student portal results",
+        "when will results come",
+        "semester result",
+        "revaluation results",
+        "where to see results",
+        "result declaration date",
+        "how to download marklist",
+        "supplementary result"
+      ]
+    },
+
+    {
+      "intent": "student_portal",
+      "patterns": [
+        "ktu student portal",
+        "student login",
+        "exam registration",
+        "ktu online services",
+        "ktu portal",
+        "where to register exam",
+        "course registration",
+        "online academic services",
+        "ktu login page",
+        "student portal usage",
+        "online exam registration",
+        "course enrollment portal"
+      ]
+    },
+
+    {
+      "intent": "hostel",
+      "patterns": [
+        "hostel facility",
+        "boys hostel",
+        "girls hostel",
+        "hostel fees",
+        "is hostel available",
+        "hostel accommodation",
+        "hostel rules",
+        "hostel facilities",
+        "living facilities",
+        "hostel availability for first years",
+        "hostel rules and timings",
+        "separate hostel for girls",
+        "hostel admission procedure"
+      ]
+    },
+
+    {
+      "intent": "transport",
+      "patterns": [
+        "college bus",
+        "transport facility",
+        "bus routes",
+        "how to reach ekc",
+        "college transportation",
+        "bus timing",
+        "transport services",
+        "daily bus facility",
+        "college bus routes",
+        "bus pickup points",
+        "transport charges"
+      ]
+    },
+
+    {
+      "intent": "library",
+      "patterns": [
+        "library",
+        "digital library",
+        "books available",
+        "library timings",
+        "reference books",
+        "journals",
+        "online resources",
+        "library facility",
+        "library opening time",
+        "library borrowing rules",
+        "ebooks availability"
+      ]
+    },
+
+    {
+      "intent": "placements",
+      "patterns": [
+        "placements",
+        "placement details",
+        "companies visiting campus",
+        "job opportunities",
+        "placement cell",
+        "placement record",
+        "campus recruitment",
+        "placement training",
+        "average package",
+        "placement opportunities",
+        "placement percentage",
+        "top recruiters",
+        "placement support"
+      ]
+    },
+
+    {
+      "intent": "training_programs",
+      "patterns": [
+        "placement training",
+        "soft skill training",
+        "aptitude training",
+        "career guidance",
+        "interview training",
+        "resume training",
+        "communication skills",
+        "personality development",
+        "placement preparation",
+        "skill development programs",
+        "mock interviews"
+      ]
+    },
+
+    {
+      "intent": "internships",
+      "patterns": [
+        "internship",
+        "internship opportunities",
+        "industrial training",
+        "summer internship",
+        "internship support",
+        "industry exposure",
+        "internship guidance",
+        "industrial visit",
+        "internship assistance",
+        "company internships",
+        "internship during holidays"
+      ]
+    },
+
+    {
+      "intent": "campus_life",
+      "patterns": [
+        "campus life",
+        "student life",
+        "college environment",
+        "college atmosphere",
+        "student activities",
+        "cultural events",
+        "technical events",
+        "club activities",
+        "nss activities",
+        "college events",
+        "student clubs",
+        "technical fests",
+        "arts and cultural programs"
+      ]
+    },
+
+    {
+      "intent": "anti_ragging",
+      "patterns": [
+        "ragging",
+        "anti ragging policy",
+        "is ragging allowed",
+        "ragging complaint",
+        "anti ragging committee",
+        "ragging rules",
+        "student safety",
+        "discipline issues",
+        "ragging prevention",
+        "anti ragging measures",
+        "ragging helpline",
+        "ragging complaint process"
+      ]
+    },
+
+    {
+      "intent": "discipline",
+      "patterns": [
+        "college rules",
+        "discipline policy",
+        "code of conduct",
+        "student behaviour",
+        "disciplinary action",
+        "college regulations",
+        "rules and regulations",
+        "student discipline",
+        "disciplinary committee",
+        "student conduct rules",
+        "punishment for misconduct",
+        "code of ethics"
+      ]
+    },
+
+    {
+      "intent": "contact",
+      "patterns": [
+        "contact details",
+        "phone number",
+        "email",
+        "how to contact ekc",
+        "college address",
+        "office contact",
+        "admission office contact",
+        "location details",
+        "college phone number",
+        "office email",
+        "how to reach college"
+      ]
+    },
+
+    {
+      "intent": "goodbye",
+      "patterns": [
+        "bye",
+        "thank you",
+        "thanks",
+        "exit",
+        "quit",
+        "see you",
+        "goodbye",
+        "thank you very much",
+        "thanks a lot",
+        "thanks for helping",
+        "ok bye",
+        "i am done",
+        "see you later"
+      ]
+    },
+
+    {
+      "intent": "fallback",
+      "patterns": [
+        "i dont understand",
+        "random question",
+        "unknown query",
+        "something else",
+        "not related",
+        "can you answer something else",
+        "help me with something different",
+        "something random",
+        "this is unrelated",
+        "ignore this"
+      ]
+    }
+
+  ]
+}

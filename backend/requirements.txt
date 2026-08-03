@@ -1,0 +1,7 @@
+# EKC Chatbot - Backend Requirements
+# No TensorFlow needed — replaced with lightweight TF-IDF engine
+ 
+fastapi
+uvicorn
+scikit-learn
+numpy

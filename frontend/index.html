@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EKC AI Helpdesk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app-container">
+
+  <!-- HEADER -->
+  <header class="top-bar">
+
+    <img src="EKC.png" alt="EKC Logo" class="logo">
+
+    <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+      🌙
+    </button>
+
+  </header>
+
+  <!-- CHAT AREA -->
+  <div id="chat-box" class="chat-area">
+    <div class="bot-message">
+      👋 Hello! I’m the EKC AI Helpdesk.<br>
+      Ask me anything about admissions, KTU rules, courses, or campus life.
+    </div>
+  </div>
+
+  <!-- QUICK CHIPS -->
+  <div class="chips">
+    <button onclick="quickAsk('admission process')">Admissions</button>
+    <button onclick="quickAsk('courses offered')">Courses</button>
+    <button onclick="quickAsk('fee structure')">Fees</button>
+    <button onclick="quickAsk('ktu rules')">KTU Rules</button>
+    <button onclick="quickAsk('placements')">Placements</button>
+  </div>
+
+  <!-- INPUT BAR -->
+  <div class="input-bar">
+    <input
+      id="user-input"
+      placeholder="Type your question here..."
+      autocomplete="off"
+    />
+    <button id="mic-btn" onclick="startSpeech()">🎙️</button>
+    <button id="send-btn" onclick="sendMessage()">➤</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
