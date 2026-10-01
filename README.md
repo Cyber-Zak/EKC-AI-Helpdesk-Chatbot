@@ -98,14 +98,6 @@ Open `frontend/index.html` in your browser.
 
 ## 📸 Screenshots
 
-Add screenshots of your chatbot interface here.
-
-Example:
-
-- Home Screen
-- Chat Interface
-- Dark Mode
-- Voice Input
 
 ---
 
