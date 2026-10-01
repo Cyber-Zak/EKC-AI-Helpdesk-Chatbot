@@ -108,6 +108,44 @@ Open `frontend/index.html` in your browser.
 ### Chat Interface
 
 
+![Conversation 1](screenshots/conversation1.png)
+
+
+
+
+![Conversation 2](screenshots/conversation2.png)
+
+
+
+### Quick Suggestions
+
+
+![Quick Chat](screenshots/quickchat.png)
+
+
+
+### Dark Mode
+
+
+![Dark Mode](screenshots/darkmode.png)
+
+
+
+### Voice Input
+
+
+![Voice Input](screenshots/speech%20to%20text.png)
+
+### Home Screen
+
+
+![Home Screen](screenshots/home.png)
+
+
+
+### Chat Interface
+
+
 ![Chat Interface](screenshots/chat.png)
 
 
