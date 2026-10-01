@@ -64,7 +64,7 @@ EKC-AI-Helpdesk-Chatbot/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/EKC-AI-Helpdesk-Chatbot.git
+git clone https://github.com/Cyber-Zak/EKC-AI-Helpdesk-Chatbot.git
 ```
 
 ### Install dependencies
