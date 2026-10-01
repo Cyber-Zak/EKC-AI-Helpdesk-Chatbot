@@ -98,6 +98,32 @@ Open `frontend/index.html` in your browser.
 
 ## 📸 Screenshots
 
+### Home Screen
+
+
+![Home Screen](screenshots/home.png)
+
+
+
+### Chat Interface
+
+
+![Chat Interface](screenshots/chat.png)
+
+
+
+### Dark Mode
+
+
+![Dark Mode](screenshots/dark.png)
+
+
+
+### Voice Input
+
+
+![Voice Input](screenshots/voice.png)
+
 
 ---
 
