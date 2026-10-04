@@ -1,0 +1,153 @@
+query,intent
+hello ekc team,greeting
+good morning sir,greeting
+hey is somebody available,greeting
+hi i want some help,greeting
+good evening ekc bot,greeting
+bye bye,goodbye
+thanks for the information,goodbye
+ok thank you,goodbye
+thats all see you,goodbye
+thanks bot goodbye,goodbye
+tell me about your college,about_ekc
+who is the owner of ekc,about_ekc
+is ekc a good college,about_ekc
+give me an overview of ekc,about_ekc
+what kind of institution is ekc,about_ekc
+what does ktu stand for,ktu_about
+is ktu a state university,ktu_about
+when was ktu started,ktu_about
+tell me about apj abdul kalam university,ktu_about
+who governs ktu,ktu_about
+which btech branches do you offer,courses_offered
+is computer science available,courses_offered
+do you have civil engineering,courses_offered
+list all departments,courses_offered
+is cyber security course there,courses_offered
+how many seats in cse,seat_structure
+what is the intake for each branch,seat_structure
+number of nri seats,seat_structure
+seats under government quota,seat_structure
+seat distribution in ekc,seat_structure
+what marks are needed for btech,eligibility
+am i eligible with 50 percent in maths,eligibility
+can diploma students join,eligibility
+minimum qualification for admission,eligibility
+eligibility for lateral entry,eligibility
+how do i join the college,admission_process
+what is the procedure to take admission,admission_process
+how to get a seat through keam,admission_process
+documents needed for joining,admission_process
+how to take management seat,admission_process
+what are the btech fees,fees
+fee for nri students,fees
+is there any refund of fees,fees
+hostel fees details,fees
+how much do i have to pay,fees
+are scholarships available,scholarships
+how can i get a fee waiver,scholarships
+tell me about minority scholarship,scholarships
+any financial help for students,scholarships
+what is egrants,scholarships
+how much attendance is required,attendance_rules
+what happens if my attendance is below 75,attendance_rules
+can i attend exams with less attendance,attendance_rules
+attendance shortage rules,attendance_rules
+is there attendance relaxation,attendance_rules
+what are the passing marks in ktu,ktu_academics
+how does the grading system work,ktu_academics
+how is sgpa calculated,ktu_academics
+what is the year back rule,ktu_academics
+how many credits are required for the degree,ktu_academics
+how many activity points do i need,activity_points
+how can i earn activity points,activity_points
+activity points through nss,activity_points
+activity points for graduation,activity_points
+what are activity points,activity_points
+how are ktu exams conducted,exams
+when is the semester exam,exams
+what is the exam pattern,exams
+internal exam rules,exams
+exam hall rules,exams
+where can i see my results,results
+how to check ktu result,results
+when will semester results come,results
+how do i apply for revaluation,results
+how to download marklist,results
+how to login to ktu portal,student_portal
+where do i register for exams,student_portal
+ktu student portal link,student_portal
+how to do course registration,student_portal
+online services of ktu,student_portal
+is hostel available for girls,hostel
+hostel facilities in ekc,hostel
+tell me about boys hostel,hostel
+what are the rules in the hostel,hostel
+can first year students stay in the hostel,hostel
+is there a college bus,transport
+bus routes to manjeri,transport
+which areas does the bus cover,transport
+bus timings,transport
+do you provide transportation,transport
+is there a library,library
+what are the library timings,library
+are ebooks available,library
+how can i borrow books,library
+do you have a digital library,library
+which companies visit for placement,placements
+what is the placement record,placements
+average package details,placements
+tell me about the placement cell,placements
+job opportunities after btech,placements
+do you provide aptitude training,training_programs
+are there soft skill classes,training_programs
+mock interview sessions,training_programs
+career guidance programs,training_programs
+resume building training,training_programs
+internship opportunities for students,internships
+is industrial training provided,internships
+summer internship details,internships
+do you arrange internships,internships
+industrial visits,internships
+how is life in the campus,campus_life
+are there cultural events,campus_life
+tell me about student clubs,campus_life
+technical fest details,campus_life
+what activities are there for students,campus_life
+is ragging allowed in the college,anti_ragging
+how to complain about ragging,anti_ragging
+anti ragging committee details,anti_ragging
+ragging helpline number,anti_ragging
+what are the measures against ragging,anti_ragging
+what is the code of conduct,discipline
+what are the college rules,discipline
+disciplinary action for students,discipline
+punishment for misconduct,discipline
+what is the college phone number,contact
+how can i contact the admission office,contact
+give me the college email,contact
+where is the college address,contact
+contact details of ekc,contact
+whre can i chek my resuts,results
+scholarhsip details,scholarships
+hostl facilty,hostel
+admision procss,admission_process
+placment details,placements
+libary timings,library
+atendance shortage,attendance_rules
+fes structure,fees
+courrses offered,courses_offered
+ragging complant,anti_ragging
+who is the prime minister of india,fallback
+what is the capital of france,fallback
+tell me a joke,fallback
+what is the weather today,fallback
+how to cook biryani,fallback
+who won the cricket world cup,fallback
+what is machine learning,fallback
+recommend a good movie,fallback
+how to learn python,fallback
+what is the time now,fallback
+latest iphone price,fallback
+which is the best engineering college in kerala,fallback
+how to hack a wifi password,fallback
