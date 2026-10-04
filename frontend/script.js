@@ -1,4 +1,7 @@
-const API_URL = window.EKC_API_URL || "http://127.0.0.1:8000";   // change when deployed
+const API_URL = window.EKC_API_URL ||
+     (location.hostname.endsWith(".app.github.dev")
+       ? location.origin.replace(/-\d+\./, "-8000.")
+       : "http://127.0.0.1:8000");   // change when deployed
 const THINK_DELAY_MS = 300;            // short pause before typing starts
 const TYPING_SOUND_URL = "";           // optional LOCAL file, e.g. "typing.mp3" ("" = no sound)
 const MAX_LEN = 500;                   // must match the backend limit
