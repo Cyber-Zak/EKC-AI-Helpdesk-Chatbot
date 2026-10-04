@@ -1,6 +1,5 @@
 {
   "intents": [
-
     {
       "intent": "greeting",
       "patterns": [
@@ -24,7 +23,6 @@
         "need some information"
       ]
     },
-
     {
       "intent": "about_ekc",
       "patterns": [
@@ -48,7 +46,6 @@
         "ekc trust details"
       ]
     },
-
     {
       "intent": "ktu_about",
       "patterns": [
@@ -70,7 +67,6 @@
         "ktu under government or private"
       ]
     },
-
     {
       "intent": "courses_offered",
       "patterns": [
@@ -93,7 +89,6 @@
         "new branches in ekc"
       ]
     },
-
     {
       "intent": "seat_structure",
       "patterns": [
@@ -114,7 +109,6 @@
         "management quota seats count"
       ]
     },
-
     {
       "intent": "eligibility",
       "patterns": [
@@ -136,7 +130,6 @@
         "lateral entry eligibility"
       ]
     },
-
     {
       "intent": "admission_process",
       "patterns": [
@@ -158,7 +151,6 @@
         "management seat admission steps"
       ]
     },
-
     {
       "intent": "fees",
       "patterns": [
@@ -180,7 +172,6 @@
         "hostel and mess fees"
       ]
     },
-
     {
       "intent": "scholarships",
       "patterns": [
@@ -202,7 +193,6 @@
         "how to apply for scholarship"
       ]
     },
-
     {
       "intent": "attendance_rules",
       "patterns": [
@@ -222,15 +212,12 @@
         "attendance relaxation rules"
       ]
     },
-
     {
       "intent": "ktu_academics",
       "patterns": [
         "ktu rules",
-        "ktu exam rules",
         "passing marks",
         "year back system",
-        "activity points",
         "ktu regulations",
         "ktu academic rules",
         "grading system",
@@ -244,10 +231,10 @@
         "year back conditions"
       ]
     },
-
     {
       "intent": "activity_points",
       "patterns": [
+        "activity points",
         "what are activity points",
         "how to get activity points",
         "ktu activity points",
@@ -262,11 +249,11 @@
         "hackathon activity points"
       ]
     },
-
     {
       "intent": "exams",
       "patterns": [
         "ktu exams",
+        "ktu exam rules",
         "semester exam",
         "internal exam",
         "external exam",
@@ -281,7 +268,6 @@
         "exam hall rules"
       ]
     },
-
     {
       "intent": "results",
       "patterns": [
@@ -289,7 +275,7 @@
         "how to check results",
         "exam results",
         "result website",
-        "ktu student portal results",
+        "check results on ktu portal",
         "when will results come",
         "semester result",
         "revaluation results",
@@ -299,7 +285,6 @@
         "supplementary result"
       ]
     },
-
     {
       "intent": "student_portal",
       "patterns": [
@@ -317,14 +302,12 @@
         "course enrollment portal"
       ]
     },
-
     {
       "intent": "hostel",
       "patterns": [
         "hostel facility",
         "boys hostel",
         "girls hostel",
-        "hostel fees",
         "is hostel available",
         "hostel accommodation",
         "hostel rules",
@@ -336,7 +319,6 @@
         "hostel admission procedure"
       ]
     },
-
     {
       "intent": "transport",
       "patterns": [
@@ -353,7 +335,6 @@
         "transport charges"
       ]
     },
-
     {
       "intent": "library",
       "patterns": [
@@ -370,7 +351,6 @@
         "ebooks availability"
       ]
     },
-
     {
       "intent": "placements",
       "patterns": [
@@ -381,7 +361,6 @@
         "placement cell",
         "placement record",
         "campus recruitment",
-        "placement training",
         "average package",
         "placement opportunities",
         "placement percentage",
@@ -389,7 +368,6 @@
         "placement support"
       ]
     },
-
     {
       "intent": "training_programs",
       "patterns": [
@@ -406,7 +384,6 @@
         "mock interviews"
       ]
     },
-
     {
       "intent": "internships",
       "patterns": [
@@ -423,7 +400,6 @@
         "internship during holidays"
       ]
     },
-
     {
       "intent": "campus_life",
       "patterns": [
@@ -442,7 +418,6 @@
         "arts and cultural programs"
       ]
     },
-
     {
       "intent": "anti_ragging",
       "patterns": [
@@ -460,7 +435,6 @@
         "ragging complaint process"
       ]
     },
-
     {
       "intent": "discipline",
       "patterns": [
@@ -478,7 +452,6 @@
         "code of ethics"
       ]
     },
-
     {
       "intent": "contact",
       "patterns": [
@@ -495,7 +468,6 @@
         "how to reach college"
       ]
     },
-
     {
       "intent": "goodbye",
       "patterns": [
@@ -514,7 +486,6 @@
         "see you later"
       ]
     },
-
     {
       "intent": "fallback",
       "patterns": [
@@ -530,6 +501,5 @@
         "ignore this"
       ]
     }
-
   ]
 }
