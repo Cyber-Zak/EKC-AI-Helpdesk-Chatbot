@@ -25,3 +25,7 @@ Thumbs.db
 
 # Logs
 *.log
+backend/logs.db
+training/artifacts/
+confusion_matrix.csv
+.ipynb_checkpoints/
