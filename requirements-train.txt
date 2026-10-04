@@ -1,0 +1,3 @@
+# Only for the BiLSTM baseline (training/train_model.py) and evaluation
+-r requirements.txt
+tensorflow>=2.15
