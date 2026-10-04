@@ -241,3 +241,27 @@ body.dark-mode {
     height: 80px;
   }
 }
+/* ===== Add at the END of style.css ===== */
+
+/* Accessible contrast (about 5.5:1 and 7.8:1 with white text; the old blues were 2.3:1 and 3.5:1) */
+:root { --bot-bubble: #1F6F9E; --user-bubble: #14577F; }
+body.dark-mode { --bot-bubble: #1F6F9E; --user-bubble: #14577F; }
+
+/* Mobile browsers: 100vh includes the address bar */
+body { height: 100dvh; }
+.app-container { height: 92dvh; }
+@media (max-width: 480px) { .app-container { height: 100dvh; } }
+
+/* Keep line breaks in answers; show keyboard focus */
+.bot-message { white-space: pre-wrap; }
+.input-bar input:focus-visible,
+.input-bar button:focus-visible,
+.chips button:focus-visible,
+.theme-toggle:focus-visible { outline: 3px solid #ffb300; outline-offset: 2px; }
+
+/* Feedback buttons and privacy notice */
+.feedback { margin-top: 6px; }
+.feedback button { background: none; border: none; cursor: pointer; font-size: 16px; }
+.notice { margin: 0; padding: 6px 14px 10px; font-size: 11px; color: #666;
+          background: var(--input-bg); text-align: center; }
+body.dark-mode .notice { color: #aaa; }
