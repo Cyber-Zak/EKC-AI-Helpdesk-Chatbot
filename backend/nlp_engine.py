@@ -4,7 +4,7 @@ from collections import Counter
 from pathlib import Path
 
 import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS, TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # DOMAIN_WORDS and KEYWORD_RULES: move your existing lists, unchanged, into backend/rules.py
@@ -16,12 +16,18 @@ except ImportError:
 BASE_DIR = Path(__file__).resolve().parent
 TFIDF_THRESHOLD = 0.35   # tune with evaluate.py
 VOTE_MIN_SCORE = 0.25
+OUT_OF_DOMAIN_MIN = 0.55  # stricter bar when the query has no college word
 
 
 def clean_text(text: str) -> str:
     text = text.lower().strip()
     text = re.sub(r"[^a-z0-9\s]", "", text)
     return re.sub(r"\s+", " ", text)
+
+
+def prep(text: str) -> str:
+    """Clean + drop English stop words so 'is/there/how' cannot create false matches."""
+    return " ".join(w for w in clean_text(text).split() if w not in ENGLISH_STOP_WORDS)
 
 
 # ---- Load intents (path no longer depends on the working directory) ----
@@ -33,7 +39,7 @@ for obj in data["intents"]:
     if obj["intent"] == "fallback":      # fallback is handled by thresholds, not by patterns
         continue
     for pattern in obj["patterns"]:
-        corpus.append(clean_text(pattern))   # same cleaning as queries
+        corpus.append(prep(pattern))   # same preparation as queries
         intent_map.append(obj["intent"])
 
 # ---- Word n-grams + character n-grams (handles typos like "scholarhsip") ----
@@ -89,12 +95,21 @@ def predict(text: str, mode: str = "hybrid"):
         if mode == "keyword":
             return "fallback", 0.0, "no_match"
 
-    if mode == "hybrid" and not is_in_domain(q):
-        return "fallback", 0.0, "domain_gate"
+    in_domain = mode != "hybrid" or is_in_domain(q)
+    pq = prep(q)
+    if not pq:
+        return "fallback", 0.0, "empty"
 
-    scores = _scores(q)
+    scores = _scores(pq)
     best = int(np.argmax(scores))
     s = float(scores[best])
+
+    # No college word in the query: not blocked, but needs much higher similarity
+    if not in_domain:
+        if s >= OUT_OF_DOMAIN_MIN:
+            return intent_map[best], s, "tfidf_strict"
+        return "fallback", s, "domain_gate"
+
     if s >= TFIDF_THRESHOLD:
         return intent_map[best], s, "tfidf"
     if s >= VOTE_MIN_SCORE:
