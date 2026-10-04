@@ -4,24 +4,19 @@
   <meta charset="UTF-8" />
   <title>EKC AI Helpdesk</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI helpdesk for Eranad Knowledge City Technical Campus: admissions, KTU rules, courses and campus life.">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <div class="app-container">
 
-  <!-- HEADER -->
   <header class="top-bar">
-
     <img src="EKC.png" alt="EKC Logo" class="logo">
-
-    <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
-      🌙
-    </button>
-
+    <button id="theme-toggle" class="theme-toggle" type="button"
+            aria-label="Toggle dark mode" onclick="toggleTheme()">🌙</button>
   </header>
 
-  <!-- CHAT AREA -->
   <div id="chat-box" class="chat-area">
     <div class="bot-message">
       👋 Hello! I’m the EKC AI Helpdesk.<br>
@@ -29,28 +24,29 @@
     </div>
   </div>
 
-  <!-- QUICK CHIPS -->
   <div class="chips">
-    <button onclick="quickAsk('admission process')">Admissions</button>
-    <button onclick="quickAsk('courses offered')">Courses</button>
-    <button onclick="quickAsk('fee structure')">Fees</button>
-    <button onclick="quickAsk('ktu rules')">KTU Rules</button>
-    <button onclick="quickAsk('placements')">Placements</button>
+    <button type="button" onclick="quickAsk('admission process')">Admissions</button>
+    <button type="button" onclick="quickAsk('courses offered')">Courses</button>
+    <button type="button" onclick="quickAsk('fee structure')">Fees</button>
+    <button type="button" onclick="quickAsk('ktu rules')">KTU Rules</button>
+    <button type="button" onclick="quickAsk('placements')">Placements</button>
   </div>
 
-  <!-- INPUT BAR -->
   <div class="input-bar">
-    <input
-      id="user-input"
-      placeholder="Type your question here..."
-      autocomplete="off"
-    />
-    <button id="mic-btn" onclick="startSpeech()">🎙️</button>
-    <button id="send-btn" onclick="sendMessage()">➤</button>
+    <input id="user-input" placeholder="Type your question here..."
+           aria-label="Type your question" maxlength="500" autocomplete="off" />
+    <button id="mic-btn" type="button" aria-label="Speak your question" onclick="startSpeech()">🎙️</button>
+    <button id="send-btn" type="button" aria-label="Send message" onclick="sendMessage()">➤</button>
   </div>
+
+  <p class="notice">
+    Questions are saved anonymously to improve answers. Please don’t share personal details.
+    Answers are for guidance; confirm important details with the college office.
+  </p>
 
 </div>
 
+<noscript>This chatbot needs JavaScript to run.</noscript>
 <script src="script.js"></script>
 </body>
 </html>
