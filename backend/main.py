@@ -4,6 +4,7 @@ from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 try:                                   # works as `uvicorn backend.main:app` (root)
@@ -93,3 +94,8 @@ def list_intents():
     """Dev utility: list all known intents."""
     return {"intents": [i["intent"] for i in data["intents"]]}
 
+
+# Serve the chat page from the same server: open http://<host>:8000/app/
+FRONTEND_DIR = Path(__file__).resolve().parents[1] / "frontend"
+if FRONTEND_DIR.exists():
+    app.mount("/app", StaticFiles(directory=FRONTEND_DIR, html=True), name="app")
