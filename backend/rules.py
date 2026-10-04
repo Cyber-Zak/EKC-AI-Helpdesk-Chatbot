@@ -36,7 +36,7 @@ KEYWORD_RULES = [
 
     (["fee structure", "tuition fee", "btech fee", "college fee", "hostel fee",
       "management quota fee", "government quota fee", "nri fee",
-      "how much is the fee", "total fee"], "fees"),
+      "how much is the fee", "total fee", "mess fee"], "fees"),
 
     (["hostel", "boys hostel", "girls hostel", "hostel facility",
       "hostel accommodation"], "hostel"),
@@ -55,7 +55,7 @@ KEYWORD_RULES = [
 
     (["scholarship", "egrant", "financial aid", "fee waiver",
       "minority scholarship", "merit scholarship",
-      "education loan"], "scholarships"),
+      "education loan", "apply for scholarship"], "scholarships"),
 
     (["attendance", "attendance shortage", "minimum attendance",
       "attendance percentage", "attendance rule"], "attendance_rules"),
@@ -107,7 +107,7 @@ KEYWORD_RULES = [
       "tell me about ekc", "ekc overview",
       "ekc technical campus"], "about_ekc"),
 
-    (["placement training", "soft skill training", "aptitude training",
+    (["placement training", "placement preparation", "soft skill training", "aptitude training",
       "mock interview", "resume training",
       "personality development"], "training_programs"),
 
